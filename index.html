@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>gogyo — 日本語入力用のキー配列</title>
+<style>
+body{max-width:880px;margin:2em auto;padding:0 1em;font-family:"Noto Sans JP",sans-serif;line-height:1.8;color:#222}
+img{width:100%;height:auto}
+code,pre{font-family:ui-monospace,monospace;background:#f3f3f3;border-radius:4px}
+code{padding:.1em .3em}
+pre{padding:.8em 1em;overflow-x:auto}
+table{border-collapse:collapse}
+td,th{border:1px solid #ccc;padding:.2em .7em;text-align:center}
+</style>
+</head>
+<body>
+<h1>gogyo</h1>
+<p><img src="layout.svg" alt="gogyo の配列図"></p>
+<p>gogyo は日本語入力のための配列です。キーボードは QWERTY のままで、Google 日本語入力のローマ字テーブルを差し替えるだけで使えます。英語を打つときはいつもの QWERTY です。</p>
+
+<h2>しくみ</h2>
+<p>左手のホームポジション <code>A S D F G</code> に「あいうえお」を置き、右手に子音を置きます。子音のあとに母音を打つと 1 文字になります。</p>
+<table>
+<tr><th>打鍵</th><th>出る文字</th></tr>
+<tr><td><code>H A</code></td><td>か</td></tr>
+<tr><td><code>Y A</code></td><td>が</td></tr>
+<tr><td><code>K L A</code></td><td>ま</td></tr>
+<tr><td><code>H E</code></td><td>きゅ</td></tr>
+<tr><td><code>H E E</code></td><td>きゅう</td></tr>
+<tr><td><code>X H</code></td><td>っ</td></tr>
+</table>
+<p>濁音と半濁音は、清音のキーのひとつ上の段にあります。子音のあとに <code>Q W E R T</code> を打つと拗音になり、<code>Q</code> と <code>E</code> は重ねると長音がつきます。ま行は <code>K</code>→<code>L</code> と続けて打ちます。<code>X</code> は小書きと促音、<code>Z</code> は記号の前置キーです。</p>
+
+<h2>使い方</h2>
+<p><a href="gogyo.txt">gogyo.txt</a> をダウンロードし、Google 日本語入力のプロパティからローマ字テーブルの編集画面を開いてインポートしてください。</p>
+</body>
+</html>
