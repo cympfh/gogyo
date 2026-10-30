@@ -5,19 +5,46 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>gogyo — 日本語入力用のキー配列</title>
 <style>
-body{max-width:880px;margin:2em auto;padding:0 1em;font-family:"Noto Sans JP",sans-serif;line-height:1.8;color:#222}
-img{width:100%;height:auto}
-code,pre{font-family:ui-monospace,monospace;background:#f3f3f3;border-radius:4px}
-code{padding:.1em .3em}
-pre{padding:.8em 1em;overflow-x:auto}
-table{border-collapse:collapse}
-td,th{border:1px solid #ccc;padding:.2em .7em;text-align:center}
+:root{--bg:#0f1115;--card:#171a21;--line:#262b36;--fg:#e8e9ec;--mute:#9aa1ad;--accent:#F05033;--blue:#5b8cff}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--fg);font-family:"Noto Sans JP","Hiragino Sans",system-ui,sans-serif;line-height:1.85}
+.hero{position:relative;overflow:hidden;padding:5.5em 1.2em 3em;text-align:center;
+ background:radial-gradient(1000px 420px at 50% -10%,rgba(240,80,51,.35),transparent 70%),radial-gradient(700px 360px at 90% 10%,rgba(91,140,255,.25),transparent 70%)}
+.hero h1{margin:0;font-size:clamp(3rem,10vw,6.5rem);letter-spacing:.06em;font-weight:900;line-height:1;
+ background:linear-gradient(90deg,#fff,#ffb4a6 45%,var(--accent));-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero .kana{margin:.5em 0 0;font-size:1.05rem;letter-spacing:1.2em;color:var(--mute);padding-left:1.2em}
+.hero .lead{max-width:640px;margin:1.6em auto 0;font-size:1.1rem;color:#cfd3da}
+.btns{margin-top:2em;display:flex;gap:.8em;justify-content:center;flex-wrap:wrap}
+.btn{display:inline-block;padding:.7em 1.5em;border-radius:999px;text-decoration:none;font-weight:700;transition:transform .15s,box-shadow .15s}
+.btn:hover{transform:translateY(-2px)}
+.btn.primary{background:var(--accent);color:#fff;box-shadow:0 8px 24px rgba(240,80,51,.35)}
+.btn.ghost{border:1px solid var(--line);color:var(--fg);background:rgba(255,255,255,.03)}
+.figure{max-width:1000px;margin:0 auto;padding:0 1.2em}
+.figure img{width:100%;height:auto;border-radius:16px;border:1px solid var(--line);box-shadow:0 30px 80px rgba(0,0,0,.5);background:#fafafa}
+main{max-width:860px;margin:0 auto;padding:2em 1.2em 5em}
+h2{margin:2.6em 0 .6em;font-size:1.6rem;padding-left:.6em;border-left:5px solid var(--accent)}
+h3{margin:1.8em 0 .4em;font-size:1.15rem;color:#ffd0c7}
+p,li{color:#d6d9de}
+a{color:var(--blue)}
+code{font-family:"JetBrains Mono",ui-monospace,monospace;background:#232836;color:#ffcfc5;border:1px solid var(--line);border-radius:6px;padding:.08em .4em;font-size:.92em}
+table{width:100%;border-collapse:separate;border-spacing:0;margin:1em 0;background:var(--card);border:1px solid var(--line);border-radius:12px;overflow:hidden}
+th,td{padding:.55em 1em;text-align:left;border-bottom:1px solid var(--line)}
+tr:last-child td{border-bottom:none}
+th{background:#1d212b;color:var(--mute);font-weight:600;font-size:.9rem}
+td:last-child{font-size:1.05rem}
+footer{text-align:center;color:var(--mute);padding:2em;border-top:1px solid var(--line);font-size:.9rem}
 </style>
 </head>
 <body>
+<header class="hero">
 <h1>gogyo</h1>
-<p><img src="layout.svg" alt="gogyo の配列図"></p>
-<p>gogyo は日本語入力のための配列です。キーボードは QWERTY のままで、Google 日本語入力のローマ字テーブルを差し替えるだけで使えます。英語を打つときはいつもの QWERTY です。</p>
+<p class="kana">五行</p>
+<p class="lead">gogyo は日本語入力のための配列です。キーボードは QWERTY のままで、Google 日本語入力のローマ字テーブルを差し替えるだけで使えます。英語を打つときはいつもの QWERTY です。</p>
+<div class="btns"><a class="btn primary" href="gogyo.txt" download>gogyo.txt をダウンロード</a><a class="btn ghost" href="https://github.com/cympfh/gogyo">GitHub</a></div>
+</header>
+<div class="figure"><img src="layout.svg" alt="gogyo の配列図"></div>
+<main>
 
 <h2>しくみ</h2>
 <p>左手のホームポジション <code>A S D F G</code> に「あいうえお」を置き、右手に子音を置きます。子音のあとに母音を打つと 1 文字になります。</p>
@@ -105,5 +132,7 @@ td,th{border:1px solid #ccc;padding:.2em .7em;text-align:center}
 <li>「ぢ」と「づ」は <code>is</code> と <code>id</code> です。「ぢゃ」なども <code>iq</code> のように打てます。</li>
 <li><code>xkd</code> でも「っ」になります。</li>
 </ul>
+</main>
+<footer>gogyo · <a href="https://github.com/cympfh/gogyo">cympfh/gogyo</a></footer>
 </body>
 </html>
