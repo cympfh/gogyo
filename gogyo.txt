@@ -11,6 +11,7 @@ zj	↓
 zk	↑
 zl	→
 z-	〜
+zc	〜
 z[	『
 z]	』
 zm	【済】
