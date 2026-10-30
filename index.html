@@ -34,5 +34,62 @@ td,th{border:1px solid #ccc;padding:.2em .7em;text-align:center}
 
 <h2>使い方</h2>
 <p><a href="gogyo.txt">gogyo.txt</a> をダウンロードし、Google 日本語入力のプロパティからローマ字テーブルの編集画面を開いてインポートしてください。</p>
+
+<h2>細かいルール</h2>
+
+<h3>小書き</h3>
+<p><code>X</code> のあとに母音か <code>Q W E R T</code> を打つと小書きになります。</p>
+<table>
+<tr><th>打鍵</th><th>出る文字</th></tr>
+<tr><td><code>xa xs xd xf xg</code></td><td>ぁ ぃ ぅ ぇ ぉ</td></tr>
+<tr><td><code>xq xw xe xr xt</code></td><td>ゃ ぃ ゅ ぇ ょ</td></tr>
+<tr><td><code>xma</code></td><td>ゎ</td></tr>
+</table>
+
+<h3>促音</h3>
+<p><code>X</code> のあとに子音のキーを打つと「っ」が出て、子音はそのまま次の文字に使われます。<code>xx</code> だけでも「っ」になります。</p>
+<table>
+<tr><th>打鍵</th><th>出る文字</th></tr>
+<tr><td><code>xha</code></td><td>っか</td></tr>
+<tr><td><code>xka</code></td><td>った</td></tr>
+<tr><td><code>xxka</code></td><td>った</td></tr>
+<tr><td><code>xx</code></td><td>っ</td></tr>
+</table>
+
+<h3>拗音と長音</h3>
+<p>子音のあとに <code>Q W E R T</code> を打つと、それぞれ「ゃ ぃ ゅ ぇ ょ」がついた拗音になります。<code>Q</code> と <code>E</code> は重ねると長音がつきます。</p>
+<table>
+<tr><th>打鍵</th><th>出る文字</th></tr>
+<tr><td><code>jq</code></td><td>しゃ</td></tr>
+<tr><td><code>jqq</code></td><td>しゃあ</td></tr>
+<tr><td><code>je</code></td><td>しゅ</td></tr>
+<tr><td><code>jee</code></td><td>しゅう</td></tr>
+<tr><td><code>jt</code></td><td>しょ</td></tr>
+</table>
+<p>単打の <code>Q E T</code> は「や ゆ よ」です。</p>
+
+<h3>外来音</h3>
+<table>
+<tr><th>打鍵</th><th>出る文字</th></tr>
+<tr><td><code>kxs</code> <code>kxd</code></td><td>てぃ とぅ</td></tr>
+<tr><td><code>ixs</code> <code>ixd</code></td><td>でぃ どぅ</td></tr>
+<tr><td><code>mq mw mr mt</code></td><td>ふぁ ふぃ ふぇ ふぉ</td></tr>
+<tr><td><code>mxs mxf mxg</code></td><td>うぃ うぇ うぉ</td></tr>
+<tr><td><code>va vs vd vf vg</code></td><td>ゔぁ ゔぃ ゔぅ ゔぇ ゔぉ</td></tr>
+</table>
+
+<h3>わ行</h3>
+<p><code>ma</code> で「わ」、<code>mg</code> で「を」です。<code>ms</code> と <code>mf</code> で「ゐ」と「ゑ」も打てます。</p>
+
+<h3>記号</h3>
+<table>
+<tr><th>打鍵</th><th>出る文字</th></tr>
+<tr><td><code>[ ]</code></td><td>「 」</td></tr>
+<tr><td><code>z[ z]</code></td><td>『 』</td></tr>
+<tr><td><code>z/</code></td><td>・</td></tr>
+<tr><td><code>z. z,</code></td><td>… ‥</td></tr>
+<tr><td><code>zh zj zk zl</code></td><td>← ↓ ↑ →</td></tr>
+<tr><td><code>z- ~</code></td><td>〜</td></tr>
+</table>
 </body>
 </html>
