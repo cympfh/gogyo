@@ -51,7 +51,7 @@ yd	ぐ
 yf	げ
 yg	ご
 hq	きゃ
-jqq	きゃあ
+hqq	きゃあ
 hw	きぃ
 he	きゅ
 hee	きゅう
