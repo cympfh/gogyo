@@ -118,6 +118,10 @@ kxs	てぃ
 kxd	とぅ
 kxf	てぇ
 kxg	とぉ
+kxq	つぁ
+kxw	つぃ
+kxr	つぇ
+kxt	つぉ
 ixa	でぁ
 ixs	でぃ
 ixd	どぅ
