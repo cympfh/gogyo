@@ -11,9 +11,8 @@ html{scroll-behavior:smooth}
 body{margin:0;background:var(--bg);color:var(--fg);font-family:"Noto Sans JP","Hiragino Sans",system-ui,sans-serif;line-height:1.85}
 .hero{position:relative;overflow:hidden;padding:5.5em 1.2em 3em;text-align:center;
  background:radial-gradient(1000px 420px at 50% -10%,rgba(240,80,51,.35),transparent 70%),radial-gradient(700px 360px at 90% 10%,rgba(91,140,255,.25),transparent 70%)}
-.hero h1{margin:0;font-size:clamp(3rem,10vw,6.5rem);letter-spacing:.06em;font-weight:900;line-height:1;
+.hero h1{margin:0;font-size:clamp(3rem,10vw,6.5rem);letter-spacing:.06em;font-weight:900;line-height:1.25;padding-bottom:.12em;
  background:linear-gradient(90deg,#fff,#ffb4a6 45%,var(--accent));-webkit-background-clip:text;background-clip:text;color:transparent}
-.hero .kana{margin:.5em 0 0;font-size:1.05rem;letter-spacing:1.2em;color:var(--mute);padding-left:1.2em}
 .hero .lead{max-width:640px;margin:1.6em auto 0;font-size:1.1rem;color:#cfd3da}
 .btns{margin-top:2em;display:flex;gap:.8em;justify-content:center;flex-wrap:wrap}
 .btn{display:inline-block;padding:.7em 1.5em;border-radius:999px;text-decoration:none;font-weight:700;transition:transform .15s,box-shadow .15s}
@@ -39,7 +38,6 @@ footer{text-align:center;color:var(--mute);padding:2em;border-top:1px solid var(
 <body>
 <header class="hero">
 <h1>gogyo</h1>
-<p class="kana">五行</p>
 <p class="lead">gogyo は日本語入力のための配列です。キーボードは QWERTY のままで、Google 日本語入力のローマ字テーブルを差し替えるだけで使えます。英語を打つときはいつもの QWERTY です。</p>
 <div class="btns"><a class="btn primary" href="gogyo.txt" download>gogyo.txt をダウンロード</a><a class="btn ghost" href="https://github.com/cympfh/gogyo">GitHub</a></div>
 </header>
